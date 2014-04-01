@@ -1,4 +1,4 @@
-var pff= {"origin":"http://localhost:63342/CrossDomainMobileApp"};
+var pff= {"origin":"http://192.168.0.12:8080"};
 
 pff.initStorage = function(){
     window.localStorage.setItem("test", '[{"id":1,"value":"Note 1"},{"id":2,"value":"Note 2"},{"id":3,"value":"Note 3"}]');
@@ -55,13 +55,18 @@ pff.initStorage = function(){
 
 pff.displayDetails = function(e){
     console.log("Display Details");
-    $("#detailsContent")[0].src=pff.origin+"/cache/form.html";
+    //$("#detailsContent")[0].src=pff.origin+"/forms/form.html";
+    $("#detailsContent")[0].src="http://localhost:63342/CrossDomainMobileApp/cache/form.html";
     pff.app.navigate("#detailsView")
 };
 
 
 pff.cacheLoader = function(e){
-    $("#detailsContent")[0].src=pff.origin+"/cache/cache.manifest";
+    $("#detailsContent")[0].src=pff.origin+"/forms/form.html";
+}
+
+pff.postMessage = function(e){
+    $("#detailsContent")[0].contentWindow.postMessage('{"msg":"Hello World"}',"http://localhost:63342");
 }
 
 
