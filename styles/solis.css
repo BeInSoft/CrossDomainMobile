@@ -1,0 +1,239 @@
+
+.row-fluid [class*="span"] {
+    -moz-box-sizing: border-box;
+    display: block;
+    float: left;
+    margin-left: 2.12766%;
+    width: 100%;
+}
+.row-fluid .visites {
+	margin-left: 0;
+    width: 65.9574%;
+}
+.row-fluid .notes {
+	margin-left: 2.12766%;
+    width: 31.9149%;
+}
+
+
+.login-screen {
+    background-color: #3498DB;
+    min-height: 317px;
+    padding: 123px 199px 33px 306px;
+}
+.login-icon {
+    left: 65px;
+    position: absolute;
+    top: 160px;
+    width: 259px;
+	background: url("./solis/logo.png") no-repeat scroll right top / 100px auto rgba(0, 0, 0, 0);
+}
+
+.login-form {
+    background-color: #EDEFF1;	
+    border-radius: 6px;
+    padding: 24px 23px 20px;
+    position: relative;
+	min-width : 300px;
+}
+.login-form .control-group {
+    margin-bottom: 6px;
+    position: relative;
+}
+.login-form .login-field {
+    border-color: rgba(0, 0, 0, 0);
+    font-size: 17px;
+    margin-bottom: 10px !important;
+    padding-bottom: 11px;
+    padding-top: 11px;
+    text-indent: 3px;
+    width: 299px;
+}
+
+
+#homeButton{
+	/*background-image: url("./images/back.png");*/
+}
+
+
+.vignette.ast {
+    background: url("./solis/acces-ast.png") no-repeat scroll right top / 50px auto rgba(0, 0, 0, 0);
+}
+.vignette.asg {
+    background: url("./solis/acces-asg.png") no-repeat scroll right top / 50px auto rgba(0, 0, 0, 0);
+}
+.vignette.mdph {
+    background: url("./solis/acces-mdph.png") no-repeat scroll right top / 50px auto rgba(0, 0, 0, 0);
+}
+
+#vignette-list li{
+	float: left;
+	border-bottom: none;
+}
+
+.vignette {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #DED5BE !important;
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto auto;
+    border-radius: 1.2em 0;
+    color: #222222;
+    cursor: pointer;
+    float: left;
+    margin: 0 5px 5px;
+    min-height: 120px;
+    overflow: visible;
+    position: relative;
+    width: 150px;
+}
+
+.vignette .header {
+    height: 27px;
+    padding: 13px 0 0 10px;
+}
+.vignette .content {
+    background-color: #FFFFFF;
+    height: 100px;
+    margin: 3px;
+    padding: 7px;
+}
+.vignette .footer {
+    height: 27px;
+    padding: 13px 0 0 10px;
+}
+
+/*Une information visuelle indique l'état du formulaire sur la vignette*/
+.vignette .footer .etat{
+	width:20px;
+	height:35px;
+	float:right;
+	margin-right:10px;
+}
+.vignette .footer .brouillon {
+	background: url("./solis/etat-brouillon.png") no-repeat scroll;
+}
+.vignette .footer .valide {
+	background: url("./solis/etat-valide.png") no-repeat scroll;
+}
+.vignette .footer .refuse {
+	background: url("./solis/etat-refuse.png") no-repeat scroll;
+}
+
+
+/*Gestion du menu contextuel*/
+/*
+div.menuRDV{
+	display: none;
+}
+div.vignette:hover div.etat {
+    display: none;
+}
+div.vignette:hover div.menuRDV {
+    display: block;
+}
+
+.boutonMenuRDV {
+    background-color: #2C3E50;
+    border-radius: 7px;
+    color: #FFFFFF;
+    float: left;
+    font-size: 0px;
+    height: 30px;
+	width: 30px;
+    margin: 2px 0px 2px 2px;
+    position: relative;
+    text-align: center;
+    
+}
+.edit{
+	background-color:blue;
+	//background: url("./solis/menu-edit.png") no-repeat scroll;
+}
+.carto{
+	background-color:darkblue;
+	//background: url("./solis/menu-carto.png") no-repeat scroll;
+}
+.valid{
+	background-color:green;
+	//background: url("./solis/menu-valid.png") no-repeat scroll;
+}
+.suppr{
+	background-color:red;
+	//background: url("./solis/menu-suppr.png") no-repeat scroll;
+}
+
+/**/
+
+#map .km-content,
+#map .km-scroll-container,
+#map #map_canvas {
+    display: -webkit-box;
+    display: -moz-box;
+    width: 100%;
+}
+
+/*Gestion des notes*/
+.note{
+		display: block;
+		width:90%;
+	    background-color: #3498DB;
+	    border-radius: 4px;
+	    cursor: pointer;
+	    line-height: 15px;
+	    margin-right: 5px;
+	    overflow: hidden;
+	    padding: 6px 13px 8px 19px;
+	    position: relative;
+	    vertical-align: middle;
+}
+
+.note input.text{
+    display:block;
+    width:100%;
+    margin-right: 20px;
+    min-height: 15px;
+	vertical-align:middle;
+    border:none;
+    background: none;
+    color: #FFFFFF;
+}
+.note a.km-rowdelete{
+    height: 18px;
+    width: 18px;
+}
+.km-list > li {
+    border-bottom:none;
+    border-top:none;
+}
+
+/* Gestion de l'affichage la page du formulaire*/
+#form .km-scroll-container{
+    width: 100%;
+    height: 100%;
+}
+
+/* Gestion de l'affichage la carte*/
+
+
+
+/*Gestion des icônes sur les boutons
+Pour plus d'information; : http://docs.telerik.com/kendo-ui/getting-started/mobile/icons
+*/
+
+.km-calendar:after,
+.km-calendar:before
+{
+    content: "\e089";
+}
+.km-vignette:after,
+.km-vignette:before
+{
+    content: "\e0ab";
+}
+
+
+

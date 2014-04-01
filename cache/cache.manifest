@@ -1,0 +1,17 @@
+CACHE MANIFEST
+# Version 0.1
+
+CACHE:
+/cache/form.html
+/cache/image.jpg
+/cache/image.jpg
+/cache/js/cache.js
+/cache/js/jaydata.min.js
+/cache/js/jquery.min.js
+/cache/js/jquery.min.map
+/cache/js/kendo.all.js
+/cache/js/kendo.js
+
+NETWORK :
+
+FAIL :
