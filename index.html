@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Solis'n GO</title>
+
+    <link href="styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="styles/kendo.default.min.css" rel="stylesheet" />
+    <link href="styles/kendo.mobile.all.min.css" rel="stylesheet" />
+    <link href="styles/kendo.dataviz.min.css" rel="stylesheet" />
+    <link href="styles/kendo.dataviz.default.min.css" rel="stylesheet" />
+    <link href="styles/solis.css" rel="stylesheet" />
+
+    <script src="js/jquery.min.js"></script>
+
+    <!--Librairies Kendo composants + framework + culture -->
+    <script src="js/kendo.all.js"></script>
+    <script src="js/kendo.culture.fr.js"></script>
+
+    <!--Librairie permettant de persister les données dans le localStorage et obtenir des objet DataSource-->
+    <script  type="text/javascript" src="http://include.jaydata.org/datajs-1.0.3.min.js"></script>
+    <script src="js/jaydata.min.js"></script>
+    <script src="js/jaydatamodules/kendo.js"></script>
+
+    <script src="js/solis.js"></script>
+    <style>
+        /* Gestion de l'affichage la page du formulaire*/
+        #detailsView .km-scroll-container{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="mainView" data-role="view" data-title="Main" data-before-show="initMainView">
+        <div data-role="header">
+            <div data-role="navbar">
+                <span>Création</span>
+                <a data-role="button" data-align="right" data-click="pff.cacheLoader">Load Cache</a>
+            </div>
+        </div>
+        <div id="list" ></div>
+        <div data-role="footer">
+            <div data-role="tabstrip">
+                <a href="#mainView" data-icon="calendar">Main</a>
+                <a href="#detailsView" data-icon="vignette">Details</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="detailsView" data-role="view" data-title="Details"  data-stretch="true"
+         data-before-show="pff.displayDetails">
+        <iframe id="detailsContent"></iframe>
+
+        <div data-role="footer">
+            <div data-role="tabstrip">
+                <a href="#mainView" data-icon="calendar">Main</a>
+                <a href="#detailsView" data-icon="vignette">Details</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
